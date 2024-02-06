@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fce4ec;
+        }
+
+        #container {
+            text-align: center;
+        }
+
+        #sticker {
+            width: 150px;
+            height: 150px;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #yesButton {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+
+        #noButton {
+            background-color: #f44336;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>Will you be my Valentine?</h2>
+        <img id="sticker" src="C:\Users\Krutangi Vartak\OneDrive\Desktop\rose-rosa.gif" alt="Valentine's Day Sticker">
+        <br>
+        <button id="yesButton" onclick="response('yes')">Yes</button>
+        <button id="noButton" onclick="response('no')">No</button>
+    </div>
+
+    <script>
+        function response(answer) {
+            if (answer === 'yes') {
+                window.location.href = 'yes-response.htm';
+            } else {
+                window.location.href = 'no-response.htm';
+            }
+        }
+    </script>
+</body>
+</html>
